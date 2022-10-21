@@ -26,7 +26,7 @@ mongoose
         .catch((err)=>console.log("DB Error=>",err));
 
 
-//Routes Middeleware:-
+//Routes Middleware:-
 
 readdirSync("./routes").map(r=>app.use("/api/v1",require(`./routes/${r}`)));
 
